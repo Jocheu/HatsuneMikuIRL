@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         var btn = findViewById<Button>(R.id.button)
         var dystans = 0
 
-
+        val lista = arrayListOf<Pub>(Pub(5,"Rakieta",true,false,false))
         seekbar.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
                 dystans = seekbar.progress*5
